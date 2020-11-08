@@ -1,5 +1,5 @@
 class Forecast
-  attr_reader :id, :location, :current, :hourly, :daily
+  attr_reader :id, :location
 
   def initialize(location, forecast_data)
     @location = location
@@ -39,7 +39,7 @@ class Forecast
   def daily
     @daily.first(5).map do |daily|
       {
-        time: date(daily[:dt]),
+        date: date(daily[:dt]),
         sunrise: time(daily[:sunrise]),
         sunset: time(daily[:sunset]),
         temp_high: daily[:temp][:max],
@@ -61,7 +61,7 @@ class Forecast
   end
 
   def datetime(datetime)
-    Time.at(datetime).strftime('%c')
+    Time.at(datetime)
   end
 
   def wind_direction(deg)
