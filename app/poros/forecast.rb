@@ -28,8 +28,8 @@ class Forecast
       {
         time: time(hourly[:dt]),
         temp: hourly[:temp],
-        wind_speed: hourly[:wind_speed].to_s,
-        wind_direction: wind_direction(hourly[:wind_deg]),
+        wind_speed: "#{hourly[:wind_speed]} mph",
+        wind_direction: "from #{wind_direction(hourly[:wind_deg])}",
         conditions: hourly[:weather].first[:description],
         icon: "http://openweathermap.org/img/wn/#{hourly[:weather].first[:icon]}.png"
       }
