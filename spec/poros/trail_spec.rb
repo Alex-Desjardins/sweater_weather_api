@@ -22,7 +22,7 @@ RSpec.describe Trail do
       expect(trail.forecast).to have_key(:summary)
       expect(trail.forecast[:summary]).to eq(forecast_data[:current][:weather].first[:description])
       expect(trail.forecast).to have_key(:temp)
-      expect(trail.forecast[:temp]).to eq(forecast_data[:current][:temp].round(0))
+      expect(trail.forecast[:temp]).to eq(forecast_data[:current][:temp].round(0).to_s)
 
       expect(trail.trails).to be_an(Array)
       expect(trail.trails.first).to have_key(:name)

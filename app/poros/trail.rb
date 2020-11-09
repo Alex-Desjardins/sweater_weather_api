@@ -10,7 +10,7 @@ class Trail
   def forecast
     {
       summary: @forecast[:weather].first[:description],
-      temp: @forecast[:temp].round(0)
+      temp: @forecast[:temp].round(0).to_s
     }
   end
 
@@ -22,7 +22,7 @@ class Trail
       summary: trail[:summary],
       difficulty: trail[:difficulty],
       location: trail[:location],
-      distance_to_trail: mapping_points(@location, trail_coordinates)[:route][:distance]
+      distance_to_trail: mapping_points(@location, trail_coordinates)[:route][:distance].to_s
       }
     end
   end
