@@ -10,7 +10,7 @@ class Trail
   def forecast
     {
       summary: @forecast[:weather].first[:description],
-      temp: @forecast[:temp].round(1)
+      temp: @forecast[:temp].round(0)
     }
   end
 
