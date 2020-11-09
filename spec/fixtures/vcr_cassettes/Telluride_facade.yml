@@ -1,0 +1,501 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<MAPQUEST_API_KEY>&location=Telluride,CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 17:56:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1042'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 09 Nov 2020 17:56:05 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=DC1C3DBEACC3CD6023B5E4DFF8DAC17A; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2020 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2020 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Telluride,CO"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Telluride","adminArea5Type":"City","adminArea4":"San
+        Miguel County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039402","unknownInput":"","type":"s","latLng":{"lat":37.937412,"lng":-107.811757},"displayLatLng":{"lat":37.937412,"lng":-107.811757},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_API_KEY>&type=map&size=225,160&locations=37.937412,-107.811757|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1379706576"}]}]}'
+  recorded_at: Mon, 09 Nov 2020 17:56:05 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<MAPQUEST_API_KEY>&location=Telluride,CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 17:56:06 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1042'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 09 Nov 2020 17:56:06 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=C064E1F2FFC745A9299498280593FC49; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2020 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2020 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Telluride,CO"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Telluride","adminArea5Type":"City","adminArea4":"San
+        Miguel County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039402","unknownInput":"","type":"s","latLng":{"lat":37.937412,"lng":-107.811757},"displayLatLng":{"lat":37.937412,"lng":-107.811757},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_API_KEY>&type=map&size=225,160&locations=37.937412,-107.811757|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-227738926"}]}]}'
+  recorded_at: Mon, 09 Nov 2020 17:56:06 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/onecall?appid=<OPEN_WEATHER_API_KEY>&exclude=minutely,alerts&lat=37.937412&lon=-107.811757&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 09 Nov 2020 17:56:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '15696'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/onecall?exclude=minutely%2Calerts&lat=37.94&lon=-107.81&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"lat":37.94,"lon":-107.81,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1604944566,"sunrise":1604929563,"sunset":1604966658,"temp":27.55,"feels_like":14.77,"pressure":1010,"humidity":53,"dew_point":14.31,"uvi":2.78,"clouds":90,"visibility":10000,"wind_speed":12.75,"wind_deg":180,"wind_gust":17.22,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}]},"hourly":[{"dt":1604941200,"temp":27.55,"feels_like":15.48,"pressure":1010,"humidity":53,"dew_point":14.31,"clouds":90,"visibility":5917,"wind_speed":11.52,"wind_deg":211,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"pop":0.94,"snow":{"1h":0.16}},{"dt":1604944800,"temp":25.23,"feels_like":14.7,"pressure":1011,"humidity":69,"dew_point":17.47,"clouds":87,"visibility":3482,"wind_speed":9.28,"wind_deg":215,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.79},{"dt":1604948400,"temp":24.31,"feels_like":14.41,"pressure":1012,"humidity":79,"dew_point":19.38,"clouds":98,"visibility":2275,"wind_speed":8.5,"wind_deg":218,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.76},{"dt":1604952000,"temp":23.38,"feels_like":13.71,"pressure":1012,"humidity":84,"dew_point":19.72,"clouds":96,"visibility":2163,"wind_speed":8.16,"wind_deg":227,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.84},{"dt":1604955600,"temp":22.17,"feels_like":12.34,"pressure":1012,"humidity":84,"dew_point":18.54,"clouds":94,"visibility":2702,"wind_speed":8.25,"wind_deg":235,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"pop":0.87,"snow":{"1h":0.23}},{"dt":1604959200,"temp":19.92,"feels_like":9.72,"pressure":1012,"humidity":85,"dew_point":8.08,"clouds":96,"visibility":2425,"wind_speed":8.66,"wind_deg":238,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"pop":0.81,"snow":{"1h":0.23}},{"dt":1604962800,"temp":17.49,"feels_like":7.9,"pressure":1014,"humidity":85,"dew_point":5.77,"clouds":94,"visibility":10000,"wind_speed":7.23,"wind_deg":230,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"pop":0.79,"snow":{"1h":0.14}},{"dt":1604966400,"temp":10.62,"feels_like":2.12,"pressure":1016,"humidity":89,"dew_point":3.02,"clouds":85,"visibility":10000,"wind_speed":4.61,"wind_deg":211,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0.78},{"dt":1604970000,"temp":9.25,"feels_like":0.64,"pressure":1017,"humidity":90,"dew_point":2.73,"clouds":58,"visibility":10000,"wind_speed":4.68,"wind_deg":211,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.34},{"dt":1604973600,"temp":9.66,"feels_like":1.4,"pressure":1018,"humidity":91,"dew_point":3.33,"clouds":78,"visibility":10000,"wind_speed":4.14,"wind_deg":203,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.48},{"dt":1604977200,"temp":10.45,"feels_like":2.48,"pressure":1019,"humidity":91,"dew_point":4.3,"clouds":86,"visibility":319,"wind_speed":3.71,"wind_deg":201,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13n"}],"pop":0.52,"snow":{"1h":0.11}},{"dt":1604980800,"temp":13.01,"feels_like":5.47,"pressure":1020,"humidity":92,"dew_point":7.18,"clouds":89,"visibility":116,"wind_speed":3.27,"wind_deg":218,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13n"}],"pop":0.66,"snow":{"1h":0.46}},{"dt":1604984400,"temp":14.5,"feels_like":6.49,"pressure":1021,"humidity":92,"dew_point":8.87,"clouds":91,"visibility":117,"wind_speed":4.27,"wind_deg":230,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13n"}],"pop":0.79,"snow":{"1h":0.7}},{"dt":1604988000,"temp":14.9,"feels_like":6.67,"pressure":1021,"humidity":93,"dew_point":9.46,"clouds":93,"visibility":217,"wind_speed":4.74,"wind_deg":246,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13n"}],"pop":0.82,"snow":{"1h":0.47}},{"dt":1604991600,"temp":14.09,"feels_like":6.4,"pressure":1021,"humidity":93,"dew_point":8.69,"clouds":100,"visibility":429,"wind_speed":3.67,"wind_deg":253,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13n"}],"pop":0.46,"snow":{"1h":0.24}},{"dt":1604995200,"temp":12,"feels_like":4.8,"pressure":1021,"humidity":92,"dew_point":6.48,"clouds":100,"visibility":1761,"wind_speed":2.55,"wind_deg":252,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13n"}],"pop":0.42,"snow":{"1h":0.13}},{"dt":1604998800,"temp":9.82,"feels_like":2.61,"pressure":1022,"humidity":92,"dew_point":4.06,"clouds":98,"visibility":5970,"wind_speed":2.33,"wind_deg":229,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.31},{"dt":1605002400,"temp":7.77,"feels_like":0.09,"pressure":1023,"humidity":91,"dew_point":1.51,"clouds":93,"visibility":10000,"wind_speed":2.93,"wind_deg":204,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"pop":0.24},{"dt":1605006000,"temp":6.62,"feels_like":-1.73,"pressure":1023,"humidity":90,"dew_point":-0.06,"clouds":82,"visibility":10000,"wind_speed":3.98,"wind_deg":188,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.24},{"dt":1605009600,"temp":6.39,"feels_like":-2.27,"pressure":1024,"humidity":89,"dew_point":-0.87,"clouds":70,"visibility":10000,"wind_speed":4.5,"wind_deg":186,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0.2},{"dt":1605013200,"temp":6.17,"feels_like":-2.83,"pressure":1025,"humidity":87,"dew_point":-2.16,"clouds":6,"visibility":10000,"wind_speed":5.06,"wind_deg":187,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605016800,"temp":6.19,"feels_like":-2.92,"pressure":1025,"humidity":85,"dew_point":-3.98,"clouds":3,"visibility":10000,"wind_speed":5.19,"wind_deg":186,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605020400,"temp":12.9,"feels_like":4.68,"pressure":1024,"humidity":84,"dew_point":1.04,"clouds":2,"visibility":10000,"wind_speed":4.25,"wind_deg":193,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605024000,"temp":20.62,"feels_like":13.46,"pressure":1023,"humidity":80,"dew_point":4.17,"clouds":1,"visibility":10000,"wind_speed":3.15,"wind_deg":218,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605027600,"temp":24.01,"feels_like":16.3,"pressure":1022,"humidity":78,"dew_point":5.25,"clouds":7,"visibility":10000,"wind_speed":4.5,"wind_deg":253,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605031200,"temp":26.35,"feels_like":18.75,"pressure":1020,"humidity":79,"dew_point":7.61,"clouds":22,"visibility":10000,"wind_speed":4.74,"wind_deg":258,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1605034800,"temp":27.37,"feels_like":19.51,"pressure":1019,"humidity":80,"dew_point":9.27,"clouds":36,"visibility":10000,"wind_speed":5.46,"wind_deg":273,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"pop":0},{"dt":1605038400,"temp":27.9,"feels_like":20.14,"pressure":1017,"humidity":81,"dew_point":10.78,"clouds":18,"visibility":10000,"wind_speed":5.41,"wind_deg":285,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1605042000,"temp":27.28,"feels_like":19.15,"pressure":1017,"humidity":84,"dew_point":12.65,"clouds":12,"visibility":10000,"wind_speed":6.13,"wind_deg":299,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1605045600,"temp":25.99,"feels_like":18.68,"pressure":1017,"humidity":86,"dew_point":13.8,"clouds":9,"visibility":10000,"wind_speed":4.52,"wind_deg":308,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605049200,"temp":23.63,"feels_like":16.68,"pressure":1017,"humidity":90,"dew_point":14.92,"clouds":7,"visibility":10000,"wind_speed":3.65,"wind_deg":313,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605052800,"temp":13.98,"feels_like":7.43,"pressure":1019,"humidity":92,"dew_point":8.17,"clouds":13,"visibility":10000,"wind_speed":1.61,"wind_deg":324,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"pop":0},{"dt":1605056400,"temp":12.42,"feels_like":6.1,"pressure":1021,"humidity":91,"dew_point":6.39,"clouds":18,"visibility":10000,"wind_speed":1.01,"wind_deg":175,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02n"}],"pop":0},{"dt":1605060000,"temp":12.43,"feels_like":5.49,"pressure":1022,"humidity":90,"dew_point":5.56,"clouds":9,"visibility":10000,"wind_speed":2.08,"wind_deg":154,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605063600,"temp":12.72,"feels_like":5.56,"pressure":1023,"humidity":88,"dew_point":4.26,"clouds":6,"visibility":10000,"wind_speed":2.44,"wind_deg":153,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605067200,"temp":13.03,"feels_like":5.76,"pressure":1023,"humidity":86,"dew_point":3.09,"clouds":5,"visibility":10000,"wind_speed":2.62,"wind_deg":150,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605070800,"temp":12.99,"feels_like":5.56,"pressure":1024,"humidity":85,"dew_point":2.21,"clouds":3,"visibility":10000,"wind_speed":2.86,"wind_deg":155,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605074400,"temp":12.6,"feels_like":4.8,"pressure":1024,"humidity":83,"dew_point":0.07,"clouds":3,"visibility":10000,"wind_speed":3.4,"wind_deg":157,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605078000,"temp":11.97,"feels_like":3.97,"pressure":1024,"humidity":79,"dew_point":-3.26,"clouds":0,"visibility":10000,"wind_speed":3.58,"wind_deg":166,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605081600,"temp":11.61,"feels_like":3.45,"pressure":1024,"humidity":76,"dew_point":-5.55,"clouds":0,"visibility":10000,"wind_speed":3.76,"wind_deg":174,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605085200,"temp":11.62,"feels_like":3.18,"pressure":1025,"humidity":76,"dew_point":-5.48,"clouds":0,"visibility":10000,"wind_speed":4.27,"wind_deg":172,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605088800,"temp":12.04,"feels_like":3.43,"pressure":1025,"humidity":77,"dew_point":-4.56,"clouds":0,"visibility":10000,"wind_speed":4.63,"wind_deg":171,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605092400,"temp":12.15,"feels_like":3.25,"pressure":1024,"humidity":76,"dew_point":-5.12,"clouds":0,"visibility":10000,"wind_speed":5.1,"wind_deg":163,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605096000,"temp":12,"feels_like":2.57,"pressure":1025,"humidity":75,"dew_point":-6.02,"clouds":0,"visibility":10000,"wind_speed":6.04,"wind_deg":160,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605099600,"temp":11.77,"feels_like":1.78,"pressure":1025,"humidity":74,"dew_point":-6.97,"clouds":0,"visibility":10000,"wind_speed":6.98,"wind_deg":165,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1605103200,"temp":11.84,"feels_like":1.49,"pressure":1025,"humidity":75,"dew_point":-6.66,"clouds":0,"visibility":10000,"wind_speed":7.65,"wind_deg":172,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605106800,"temp":17.82,"feels_like":8.02,"pressure":1024,"humidity":79,"dew_point":1.53,"clouds":0,"visibility":10000,"wind_speed":7.4,"wind_deg":178,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1605110400,"temp":25.3,"feels_like":16.54,"pressure":1021,"humidity":81,"dew_point":8.98,"clouds":0,"visibility":10000,"wind_speed":6.73,"wind_deg":198,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0}],"daily":[{"dt":1604944800,"sunrise":1604929563,"sunset":1604966658,"temp":{"day":25.23,"min":10.6,"max":27.55,"night":14.9,"eve":11.7,"morn":22.14},"feels_like":{"day":14.7,"night":6.67,"eve":3.24,"morn":15.1},"pressure":1011,"humidity":69,"dew_point":17.47,"wind_speed":9.28,"wind_deg":215,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":87,"pop":1,"snow":8.95,"uvi":2.78},{"dt":1605031200,"sunrise":1605016028,"sunset":1605053006,"temp":{"day":26.35,"min":6.39,"max":27.28,"night":12.6,"eve":13.98,"morn":6.39},"feels_like":{"day":18.75,"night":4.8,"eve":7.43,"morn":-2.27},"pressure":1020,"humidity":79,"dew_point":7.61,"wind_speed":4.74,"wind_deg":258,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"clouds":22,"pop":0.31,"snow":0.45,"uvi":3.05},{"dt":1605117600,"sunrise":1605102494,"sunset":1605139356,"temp":{"day":31.05,"min":11.62,"max":31.33,"night":15.96,"eve":18.46,"morn":12},"feels_like":{"day":21.49,"night":5.76,"eve":9.28,"morn":2.57},"pressure":1018,"humidity":77,"dew_point":9.57,"wind_speed":8.95,"wind_deg":236,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":2.93},{"dt":1605204000,"sunrise":1605188959,"sunset":1605225708,"temp":{"day":33.62,"min":16.59,"max":35.04,"night":24.42,"eve":27.32,"morn":16.83},"feels_like":{"day":26.8,"night":15.78,"eve":20.77,"morn":7.43},"pressure":1018,"humidity":73,"dew_point":11.08,"wind_speed":4.34,"wind_deg":217,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":100,"pop":0.75,"snow":3.21,"uvi":2.97},{"dt":1605290400,"sunrise":1605275424,"sunset":1605312062,"temp":{"day":33.12,"min":19.8,"max":33.12,"night":23.58,"eve":25.54,"morn":19.8},"feels_like":{"day":24.64,"night":16.25,"eve":17.58,"morn":10.24},"pressure":1015,"humidity":83,"dew_point":19.53,"wind_speed":7.87,"wind_deg":186,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":98,"pop":0.64,"snow":2.18,"uvi":2.72},{"dt":1605376800,"sunrise":1605361890,"sunset":1605398417,"temp":{"day":31.53,"min":18.93,"max":32.95,"night":23,"eve":27.39,"morn":18.93},"feels_like":{"day":24.06,"night":15.64,"eve":20.43,"morn":9.59},"pressure":1016,"humidity":91,"dew_point":22.37,"wind_speed":6.24,"wind_deg":230,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"clouds":55,"pop":0.69,"snow":1.23,"uvi":3.08},{"dt":1605463200,"sunrise":1605448355,"sunset":1605484774,"temp":{"day":32.92,"min":18.5,"max":34.93,"night":21.81,"eve":23.09,"morn":18.5},"feels_like":{"day":26.11,"night":12.4,"eve":16.43,"morn":12.96},"pressure":1022,"humidity":76,"dew_point":11.55,"wind_speed":4.36,"wind_deg":270,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"clouds":24,"pop":0.27,"snow":0.53,"uvi":3.15},{"dt":1605549600,"sunrise":1605534820,"sunset":1605571133,"temp":{"day":40.37,"min":22.71,"max":41.85,"night":31.53,"eve":32.45,"morn":24.55},"feels_like":{"day":31.24,"night":21.45,"eve":23.04,"morn":13.95},"pressure":1020,"humidity":68,"dew_point":27.88,"wind_speed":9.53,"wind_deg":186,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":3.15}]}'
+  recorded_at: Mon, 09 Nov 2020 17:56:06 GMT
+- request:
+    method: get
+    uri: https://www.hikingproject.com/data/get-trails?key=<HIKING_PROJECT_API_KEY>&lat=37.937412&lon=-107.811757
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 17:56:06 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private
+      Pragma:
+      - no-cache
+      X-Ap-Request-Id:
+      - 73aad8ff-395e-4116-8101-a449c31626f1
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '2318'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "trails": [
+                {
+                    "id": 7018781,
+                    "name": "Bear Creek Falls",
+                    "type": "Recommended Route",
+                    "summary": "This quick route gives a true taste of Telluride and it's breathtaking landscapes.",
+                    "difficulty": "blue",
+                    "stars": 4.6,
+                    "starVotes": 44,
+                    "location": "Telluride, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7018781\/bear-creek-falls",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7048311_sqsmall_1555538955.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7048311_small_1555538955.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7048311_smallMed_1555538955.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7048311_medium_1555538955.jpg",
+                    "length": 4.7,
+                    "ascent": 1076,
+                    "descent": -1076,
+                    "high": 9888,
+                    "low": 8812,
+                    "longitude": -107.8119,
+                    "latitude": 37.9342,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "",
+                    "conditionDate": "2020-10-08 23:59:12"
+                },
+                {
+                    "id": 7003650,
+                    "name": "Mt. Sneffels",
+                    "type": "Recommended Route",
+                    "summary": "A fun and short hike through stunning Yankee Boy Basin and up a 14er right outside Ouray.",
+                    "difficulty": "black",
+                    "stars": 4.6,
+                    "starVotes": 30,
+                    "location": "Ouray, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7003650\/mt-sneffels",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7002674_sqsmall_1554226718.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7002674_small_1554226718.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7002674_smallMed_1554226718.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7002674_medium_1554226718.jpg",
+                    "length": 5,
+                    "ascent": 2431,
+                    "descent": -2430,
+                    "high": 14003,
+                    "low": 11572,
+                    "longitude": -107.7719,
+                    "latitude": 37.9897,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Mostly Dry, Some Mud",
+                    "conditionDate": "2020-09-15 16:23:49"
+                },
+                {
+                    "id": 7002604,
+                    "name": "Handies Peak - Southwest Slopes",
+                    "type": "Recommended Route",
+                    "summary": "A remote, yet easy, 14er with stunning views.",
+                    "difficulty": "blueBlack",
+                    "stars": 4.6,
+                    "starVotes": 17,
+                    "location": "Lake City, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7002604\/handies-peak-southwest-slopes",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020268_sqsmall_1554838118.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020268_small_1554838118.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020268_smallMed_1554838118.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020268_medium_1554838118.jpg",
+                    "length": 5.4,
+                    "ascent": 2377,
+                    "descent": -2376,
+                    "high": 14024,
+                    "low": 11647,
+                    "longitude": -107.5164,
+                    "latitude": 37.9203,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-09-04 13:57:26"
+                },
+                {
+                    "id": 7030068,
+                    "name": "Highland Mary Lakes Loop",
+                    "type": "Recommended Route",
+                    "summary": "From forested hillsides to rolling tundra and high alpine lakes, this loop has it all.",
+                    "difficulty": "black",
+                    "stars": 5,
+                    "starVotes": 7,
+                    "location": "Silverton, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7030068\/highland-mary-lakes-loop",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7033765_sqsmall_1554998681.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7033765_small_1554998681.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7033765_smallMed_1554998681.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7033765_medium_1554998681.jpg",
+                    "length": 7.8,
+                    "ascent": 1824,
+                    "descent": -1824,
+                    "high": 12568,
+                    "low": 10846,
+                    "longitude": -107.5796,
+                    "latitude": 37.7809,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-09-17 15:12:21"
+                },
+                {
+                    "id": 7003956,
+                    "name": "Chicago Basin 14er Grand Slam",
+                    "type": "Recommended Route",
+                    "summary": "An epic day covering all four of Chicago Basin's challenging 14ers.",
+                    "difficulty": "dblack",
+                    "stars": 5,
+                    "starVotes": 5,
+                    "location": "Silverton, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7003956\/chicago-basin-14er-grand-slam",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030501_sqsmall_1554927109.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030501_small_1554927109.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030501_smallMed_1554927109.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030501_medium_1554927109.jpg",
+                    "length": 28.9,
+                    "ascent": 12167,
+                    "descent": -12167,
+                    "high": 13935,
+                    "low": 8198,
+                    "longitude": -107.6929,
+                    "latitude": 37.6335,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7019969,
+                    "name": "Trinity and Silex Lake Route",
+                    "type": "Recommended Route",
+                    "summary": "A multi-day trip into Colorado's most rugged and remote wilderness.",
+                    "difficulty": "dblack",
+                    "stars": 5,
+                    "starVotes": 3,
+                    "location": "Silverton, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7019969\/trinity-and-silex-lake-route",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7021157_sqsmall_1554839201.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7021157_small_1554839201.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7021157_smallMed_1554839201.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7021157_medium_1554839201.jpg",
+                    "length": 34.4,
+                    "ascent": 9059,
+                    "descent": -9059,
+                    "high": 12859,
+                    "low": 10525,
+                    "longitude": -107.5796,
+                    "latitude": 37.7809,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7006406,
+                    "name": "Handies Peak - East Slopes",
+                    "type": "Recommended Route",
+                    "summary": "Arguably the most popular route to the top of Handies Peak, this is one of the peak's Class 2 routes",
+                    "difficulty": "blueBlack",
+                    "stars": 5,
+                    "starVotes": 7,
+                    "location": "Lake City, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7006406\/handies-peak-east-slopes",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020268_sqsmall_1554838118.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020268_small_1554838118.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020268_smallMed_1554838118.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7020268_medium_1554838118.jpg",
+                    "length": 8,
+                    "ascent": 3616,
+                    "descent": -3616,
+                    "high": 14025,
+                    "low": 10408,
+                    "longitude": -107.4608,
+                    "latitude": 37.9369,
+                    "conditionStatus": "Minor Issues",
+                    "conditionDetails": "Muddy, Snowy, Some Mud, Icy - 9\/12\/20 - the first part was clear. Moving above the tree line snow is packed. Then the last mile or so is shin to knee deep snow.",
+                    "conditionDate": "2020-09-12 23:00:07"
+                },
+                {
+                    "id": 7017154,
+                    "name": "Crater Lake and North Twilight",
+                    "type": "Recommended Route",
+                    "summary": "Hike to a beautiful mountain lake and throw a peak in while you're there.",
+                    "difficulty": "blueBlack",
+                    "stars": 4.8,
+                    "starVotes": 10,
+                    "location": "Silverton, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7017154\/crater-lake-and-north-twilight",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030902_sqsmall_1554928770.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030902_small_1554928770.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030902_smallMed_1554928770.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030902_medium_1554928770.jpg",
+                    "length": 14.3,
+                    "ascent": 3232,
+                    "descent": -3232,
+                    "high": 13054,
+                    "low": 10750,
+                    "longitude": -107.7109,
+                    "latitude": 37.7281,
+                    "conditionStatus": "Unknown",
+                    "conditionDetails": null,
+                    "conditionDate": "1970-01-01 00:00:00"
+                },
+                {
+                    "id": 7032163,
+                    "name": "Bridge of Heaven via the \"New\" Horsethief Trail",
+                    "type": "Recommended Route",
+                    "summary": "This worthy day hike climbs to a lofty vantage point with panoramic views of the San Juan Mountains.",
+                    "difficulty": "blueBlack",
+                    "stars": 4.8,
+                    "starVotes": 9,
+                    "location": "Ouray, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7032163\/bridge-of-heaven-via-the-new-horsethief-trail",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030843_sqsmall_1554928473.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030843_small_1554928473.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030843_smallMed_1554928473.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7030843_medium_1554928473.jpg",
+                    "length": 8.1,
+                    "ascent": 2856,
+                    "descent": -2856,
+                    "high": 12208,
+                    "low": 9352,
+                    "longitude": -107.6662,
+                    "latitude": 38.0573,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Dry",
+                    "conditionDate": "2020-09-26 17:39:51"
+                },
+                {
+                    "id": 7016936,
+                    "name": "Coalbank Pass to Molas Pass",
+                    "type": "Recommended Route",
+                    "summary": "Some great high-alpine trail with beautiful views of the San Juans.",
+                    "difficulty": "black",
+                    "stars": 5,
+                    "starVotes": 4,
+                    "location": "Silverton, Colorado",
+                    "url": "https:\/\/www.hikingproject.com\/trail\/7016936\/coalbank-pass-to-molas-pass",
+                    "imgSqSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7015139_sqsmall_1554825881.jpg",
+                    "imgSmall": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7015139_small_1554825881.jpg",
+                    "imgSmallMed": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7015139_smallMed_1554825881.jpg",
+                    "imgMedium": "https:\/\/cdn2.apstatic.com\/photos\/hike\/7015139_medium_1554825881.jpg",
+                    "length": 21.7,
+                    "ascent": 3656,
+                    "descent": -3459,
+                    "high": 12471,
+                    "low": 10696,
+                    "longitude": -107.7791,
+                    "latitude": 37.6992,
+                    "conditionStatus": "All Clear",
+                    "conditionDetails": "Some Mud",
+                    "conditionDate": "2020-09-13 13:35:21"
+                }
+            ],
+            "success": 1
+        }
+  recorded_at: Mon, 09 Nov 2020 17:56:07 GMT
+recorded_with: VCR 6.0.0
