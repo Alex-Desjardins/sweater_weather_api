@@ -1,0 +1,35 @@
+class Trail
+  attr_reader :id, :location, :forecast, :trails
+
+  def initialize(location, forecast, trail_data)
+    @location = "#{location[:adminArea5]},#{location[:adminArea3]}"
+    @forecast = forecast[:current]
+    @trails = trail_data[:trails]
+  end
+
+  def forecast
+    {
+      summary: @forecast[:weather].first[:description],
+      temp: @forecast[:temp].round(1)
+    }
+  end
+
+  def trails
+    @trails.map do |trail|
+      trail_coordinates = "#{trail[:latitude]},#{trail[:longitude]}"
+      {
+      name: trail[:name],
+      summary: trail[:summary],
+      difficulty: trail[:difficulty],
+      location: trail[:location],
+      distance_to_trail: mapping_points(@location, trail_coordinates)[:route][:distance]
+      }
+    end
+  end
+
+  private
+
+  def mapping_points(start, stop)
+    MappingService.mapping_data(start, stop)
+  end
+end
