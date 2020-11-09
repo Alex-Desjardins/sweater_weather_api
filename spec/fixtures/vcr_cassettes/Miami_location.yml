@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Nov 2020 05:58:16 GMT
+      - Mon, 09 Nov 2020 17:22:20 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1024'
+      - '1022'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,7 +35,7 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Sun, 08 Nov 2020 05:58:16 GMT
+      - Mon, 09 Nov 2020 17:22:20 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -43,7 +43,7 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=5D939CFE2FBDFA04D9197CF7D930482B; Path=/; HttpOnly
+      - JSESSIONID=3C23C62A5EE3C7C54C672E0162A5AE01; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -52,6 +52,6 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2020 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2020 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Miami,FL"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Miami","adminArea5Type":"City","adminArea4":"Miami-Dade","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040379","unknownInput":"","type":"s","latLng":{"lat":25.775084,"lng":-80.194702},"displayLatLng":{"lat":25.775084,"lng":-80.194702},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_API_KEY>&type=map&size=225,160&locations=25.775084,-80.194702|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-585989135"}]}]}'
-  recorded_at: Sun, 08 Nov 2020 05:58:16 GMT
+        2020 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Miami,FL"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Miami","adminArea5Type":"City","adminArea4":"Miami-Dade","adminArea4Type":"County","adminArea3":"FL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040379","unknownInput":"","type":"s","latLng":{"lat":25.775084,"lng":-80.194702},"displayLatLng":{"lat":25.775084,"lng":-80.194702},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<MAPQUEST_API_KEY>&type=map&size=225,160&locations=25.775084,-80.194702|marker-sm-50318A-1&scalebar=true&zoom=12&rand=28630076"}]}]}'
+  recorded_at: Mon, 09 Nov 2020 17:22:20 GMT
 recorded_with: VCR 6.0.0
