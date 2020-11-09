@@ -13,6 +13,6 @@ class TrailFacade
     location_data = get_location(location)
     forecast_data = get_forecast(location)
     trail_data = TrailService.trail_data(location_data[:latLng])
-    trails = Trail.new(location_data, forecast_data, trail_data)
+    trail = Trail.new(location_data, forecast_data, trail_data)
   end
 end
