@@ -14,7 +14,6 @@ RSpec.describe 'Forecast GET request' do
     expect(@forecast_json[:data]).to have_key(:id)
     expect(@forecast_json[:data][:type]).to eq("forecast")
     expect(@forecast_json[:data]).to have_key(:attributes)
-    expect(@forecast_json[:data][:attributes]).to have_key(:id)
     expect(@forecast_json[:data][:attributes]).to have_key(:location)
     expect(@forecast_json[:data][:attributes]).to have_key(:current)
     expect(@forecast_json[:data][:attributes]).to have_key(:hourly)
