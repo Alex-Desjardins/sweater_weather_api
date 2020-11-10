@@ -13,7 +13,7 @@ RSpec.describe Image do
     expect(image).to be_a(Image)
     expect(image.id).to eq(nil)
     expect(image.location).to eq(location)
-    expect(image.url).to eq(image_data[:url])
+    expect(image.image_url).to eq(image_data[:url])
     expect(image.credit[:source]).to eq('pexels.com')
     expect(image.credit[:photographer]).to eq(image_data[:photographer])
     expect(image.credit[:photographer_url]).to eq(image_data[:photographer_url])
