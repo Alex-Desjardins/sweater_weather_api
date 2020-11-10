@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'User Registration POST request; happy path' do
-
+RSpec.describe 'User Registration POST request' do
   it 'User data for registration; success' do
     user_params = {email: 'me@user.com',
                    password: '12345',

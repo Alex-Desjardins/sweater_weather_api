@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'User login POST request; happy path' do
-
+RSpec.describe 'User login POST request' do
   it 'User data for login; success' do
     user = User.create(email: 'me@user.com',
                    password: '12345',
@@ -13,7 +12,7 @@ RSpec.describe 'User login POST request; happy path' do
     post '/api/v1/sessions', headers: header, params: JSON.generate(login_params)
 
     login_json = JSON.parse(response.body, symbolize_names: true)
-  
+
     expect(login_json[:data][:type]).to eq("user")
     expect(login_json[:data][:id]).to eq(user.id.to_s)
     expect(login_json[:data][:attributes].keys.count).to eq(2)
