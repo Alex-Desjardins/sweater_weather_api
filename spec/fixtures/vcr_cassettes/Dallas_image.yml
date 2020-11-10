@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=1&query=Dallas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<PEXELS_API_KEY>"
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Nov 2020 23:13:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '411'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7646659715471b91dd65065525caa1421604963617; expires=Wed, 09-Dec-20
+        23:13:37 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      - __cfduid=dd944929142659d0c90d253519f88db321604963617; expires=Wed, 09-Dec-20
+        23:13:37 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 0650e2623800002717b9942000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - ALLOWALL
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19995'
+      X-Ratelimit-Reset:
+      - '1607394020'
+      X-Request-Id:
+      - 1e5f794b-e66a-47b3-a140-d52fa30649b1
+      X-Runtime:
+      - '0.088596'
+      X-Server:
+      - master
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5efb39b05ff52717-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":1,"photos":[{"id":280193,"width":2200,"height":1187,"url":"https://www.pexels.com/photo/architecture-buildings-business-city-280193/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"src":{"original":"https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg","large2x":"https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/280193/pexels-photo-280193.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":30,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=dallas"}'
+  recorded_at: Mon, 09 Nov 2020 23:13:37 GMT
+recorded_with: VCR 6.0.0
