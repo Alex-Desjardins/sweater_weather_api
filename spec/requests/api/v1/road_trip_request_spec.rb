@@ -96,4 +96,27 @@ RSpec.describe 'Road trip POST request' do
       expect(trip_json[:data][:attributes]).to_not have_key(:api_key)
     end
   end
+
+  it 'Invalid API key; fail' do
+    VCR.use_cassette('Dallas trip') do
+      user = User.create(email: 'me@user.com',
+                         password: '12345',
+                         password_confirmation: '12345')
+
+      trip_params = {
+                      origin: "New York,NY",
+                      destination: "Dallas,TX",
+                      api_key: "kjsdhfkshrkbvbsdoi209"
+                    }
+
+      header = { "CONTENT_TYPE" => "application/json" }
+      post '/api/v1/road_trip', headers: header, params: JSON.generate(trip_params)
+      request_json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(401)
+      expect(response.content_type).to eq('application/json')
+      expect(request_json[:error]).to eq("API Key Invalid")
+    end
+  end
 end
