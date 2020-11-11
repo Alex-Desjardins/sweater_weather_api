@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Nov 2020 22:42:36 GMT
+      - Wed, 11 Nov 2020 02:45:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,16 +29,16 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d2fbc1707d69de14c977982e100c2fa401604875355; expires=Tue, 08-Dec-20
-        22:42:35 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
-      - __cfduid=d6eb3b75eb530380bc8ca2e5b36d01eb11604875355; expires=Tue, 08-Dec-20
-        22:42:35 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      - __cfduid=d605107f498efc78270afee5fc0b16bff1605059485; expires=Fri, 11-Dec-20
+        01:51:25 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      - __cfduid=dff501641ee5d51ac3255a43fe5c868511605062715; expires=Fri, 11-Dec-20
+        02:45:15 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
       Cache-Control:
       - max-age=0, private, must-revalidate
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 064b9f9bd40000c7bd7aac6000000001
+      - 0656ca7eca0000c7d51b82e000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Vary:
@@ -48,22 +48,24 @@ http_interactions:
       X-Ratelimit-Limit:
       - '20000'
       X-Ratelimit-Remaining:
-      - '19996'
+      - '19987'
       X-Ratelimit-Reset:
       - '1607394020'
       X-Request-Id:
-      - f87a1cfe-eb97-48b1-b187-193c371dd598
+      - 74b63a98-083b-4e25-b479-4c4dd1962a5d
       X-Runtime:
-      - '0.138578'
+      - '0.046605'
       X-Server:
       - master
+      X-Tyk-Cached-Response:
+      - '1'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ef2ced94e7dc7bd-DEN
+      - 5f04ad114ebcc7d5-DEN
     body:
       encoding: ASCII-8BIT
-      string: '{"total_results":60,"page":1,"per_page":1,"photos":[{"id":421655,"width":3872,"height":2592,"url":"https://www.pexels.com/photo/architecture-blue-bridge-buildings-421655/","photographer":"Elvis
-        Vasquez","photographer_url":"https://www.pexels.com/@elvis-vasquez-136708","photographer_id":136708,"src":{"original":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg","large2x":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=miami"}'
-  recorded_at: Sun, 08 Nov 2020 22:42:36 GMT
+      string: '{"page":1,"per_page":1,"photos":[{"id":421655,"width":3872,"height":2592,"url":"https://www.pexels.com/photo/architecture-blue-bridge-buildings-421655/","photographer":"Elvis
+        Vasquez","photographer_url":"https://www.pexels.com/@elvis-vasquez-136708","photographer_id":136708,"src":{"original":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg","large2x":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":60,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=miami"}'
+  recorded_at: Wed, 11 Nov 2020 02:45:15 GMT
 recorded_with: VCR 6.0.0

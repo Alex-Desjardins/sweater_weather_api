@@ -14,4 +14,18 @@ RSpec.describe WeatherService do
       expect(results).to_not have_key(:alerts)
     end
   end
+
+  it 'can return destination forecast when passed coordinates' do
+    VCR.use_cassette('Telluride forecast') do
+      coordinates = {:lat=>39.738453, :lng=>-104.984853}
+
+      results = WeatherService.destination_forecast_data(coordinates)
+      expect(results).to be_a(Hash)
+      expect(results).to have_key(:hourly)
+      expect(results).to_not have_key(:daily)
+      expect(results).to_not have_key(:current)
+      expect(results).to_not have_key(:minutely)
+      expect(results).to_not have_key(:alerts)
+    end
+  end
 end

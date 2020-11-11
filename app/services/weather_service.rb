@@ -1,4 +1,14 @@
 class WeatherService
+  def self.destination_forecast_data(coordinates)
+    response = conn.get('data/2.5/onecall') do |f|
+      f.params[:lat] = coordinates[:lat]
+      f.params[:lon] = coordinates[:lng]
+      f.params[:exclude] = 'current,daily,minutely,alerts'
+      f.params[:units] = 'imperial'
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.weather_forecast_data(coordinates)
     response = conn.get('data/2.5/onecall') do |f|
       f.params[:lat] = coordinates[:lat]
