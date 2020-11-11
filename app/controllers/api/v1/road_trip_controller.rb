@@ -1,7 +1,9 @@
 class Api::V1::RoadTripController < ApplicationController
   def create
     user = User.find_by(api_key: trip_params[:api_key])
-    if user
+    if user.nil? || trip_params[:api_key].empty?
+      render json: { error: 'API Key Invalid' }, status: 401
+    elsif user
       origin = trip_params[:origin]
       destination = trip_params[:destination]
       road_trip = RoadTripFacade.get_trip(origin, destination, user)
