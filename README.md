@@ -246,7 +246,7 @@ Sample Request: `https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?loc
 ----
 
 <br>
-### Users -- *POST /users* - [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/e07eb916774801fd2b2a) <a name="users"></a>
+### Users -- (*POST /users* - [Run in Postman](https://app.getpostman.com/run-collection/e07eb916774801fd2b2a) <a name="users"></a>
 
 Submit an email, password, and password confirmation to register and create that user in the database. A unique API key will be generated for the user.
 
