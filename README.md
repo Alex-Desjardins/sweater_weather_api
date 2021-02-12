@@ -17,7 +17,7 @@
 
 ## Overview
 
-Sweater Weather is back-end Rails API designed to serve weather and trip information to a front-end app based off of these frontend [requirements and wireframes](https://backend.turing.io/module3/projects/sweater_weather/requirements). In this project, 4 different APIs were consumed and exposes data to help road-trippers plan for weather given a destination and estimated arrival time.
+Sweater Weather is back-end Rails API designed to serve weather and trip information to a front-end app based off of frontend [requirements and wireframes](https://backend.turing.io/module3/projects/sweater_weather/requirements). In this project, 4 different APIs were consumed and exposes an API to aggregate data help road-trippers plan for weather given a destination and estimated arrival time.
 
 ## APIS Consumed:
 - [OpenWeather API](https://openweathermap.org/api/one-call-api) for weather forecasts and prediction data
@@ -205,6 +205,7 @@ Sample Request: ```https://sweater-weather-ad.herokuapp.com/api/v1/forecast?loca
 }
 ```
 </details>
+
 ----
 
 <br>
