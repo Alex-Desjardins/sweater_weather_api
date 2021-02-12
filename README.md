@@ -41,7 +41,7 @@ Sweater Weather is back-end Rails API designed to serve weather and trip informa
 
 All endpoints are built on this URL: ```https://sweater-weather-ad.herokuapp.com/```
 <br><br>
-### Forecast (*GET /forecast* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/forecast?location=denver)) <a name="forecast"></a>
+### Forecast -- (*GET /forecast* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/forecast?location=denver)) <a name="forecast"></a>
 
 Retrieve detailed weather information for a given city, including:
 - Current weather conditions
@@ -209,8 +209,7 @@ Sample Request: ```https://sweater-weather-ad.herokuapp.com/api/v1/forecast?loca
 
 <br>
 
-### Backgrounds
-*GET /backgrounds* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?location=miami) <a name="backgrounds"></a>
+### Backgrounds -- (*GET /backgrounds* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?location=miami)) <a name="backgrounds"></a>
 
 Retrieve a background image URL from Pexel for a given city.
 
@@ -243,13 +242,50 @@ Sample Request: `https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?loc
 }
 ```
 </details>
+
 ----
 
 <br>
-### Users
+### Users -- (*POST /users* - [Try on Postman]())
 
-Submit a user's email, password, and password confirmation to create that user in the database and receive a unique API key for the user.
+Submit an email, password, and password confirmation to register and create that user in the database. A unique API key will be generated for the user.
+Request Body
 
+| Keys  |  Requirement | Type  |
+|---|---|---|
+| `email`  | required  | String  |
+| `password`  | required  | String  |
+| `password_confirmation`  | required  | String  |
+
+Sample Request: `https://sweater-weather-ag.herokuapp.com/api/v1/users`
+<details>
+<summary>Sample Request Body</summary>
+
+```json
+{
+  "email": "me@user.com",
+  "password": "54321",
+  "password_confirmation": "54321"
+}
+```
+</details>
+
+<details>
+<summary>Sample Response</summary>
+
+```json
+{
+  "data": {
+    "id": "1",
+    "type": "user",
+    "attributes": {
+      "email": "me@user.com",
+      "api_key": "5a341ecd-2eac-461e-924a-f9257a609345"
+    }
+  }
+}
+```
+</details>
 ----
 
 <br>
