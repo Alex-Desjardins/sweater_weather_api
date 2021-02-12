@@ -41,8 +41,7 @@ Sweater Weather is back-end Rails API designed to serve weather and trip informa
 
 All endpoints are built on this URL: ```https://sweater-weather-ad.herokuapp.com/```
 <br><br>
-### Forecast
-*GET /forecast* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/forecast?location=denver) <a name="forecast"></a>
+### Forecast (*GET /forecast* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/forecast?location=denver)) <a name="forecast"></a>
 
 Retrieve detailed weather information for a given city, including:
 - Current weather conditions
@@ -60,6 +59,7 @@ Parameters:
 Sample Request: ```https://sweater-weather-ad.herokuapp.com/api/v1/forecast?location=Denver```
 <details>
 <summary>Sample Response</summary>
+
 ```json
 {
     "data": {
@@ -205,7 +205,6 @@ Sample Request: ```https://sweater-weather-ad.herokuapp.com/api/v1/forecast?loca
 }
 ```
 </details>
-
 ----
 
 <br>
@@ -223,6 +222,7 @@ Parameters:
 Sample Request: `https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?location=miami`
 <details>
 <summary>Sample Response</summary>
+
 ```json
 {
   "data": {
@@ -243,7 +243,6 @@ Sample Request: `https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?loc
 }
 ```
 </details>
-
 ----
 
 <br>
