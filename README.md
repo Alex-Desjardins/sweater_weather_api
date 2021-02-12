@@ -6,7 +6,6 @@
 ### Jump To
 - [Overview](#overview)
 - [API's](#apis-consumed)
-- [Technologies & Architecture](#technologies-&-architecture)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
   - [Forecast](#forecast)
@@ -14,6 +13,7 @@
   - [Users](#users)
   - [Sessions](#sessions)
   - [Roadtrip](#roadtrip)
+- [Technologies](#technologies)
 
 ## Overview
 
@@ -25,33 +25,24 @@ Sweater Weather is back-end Rails API designed to serve weather and trip informa
 - [MapQuest Directions API](https://developer.mapquest.com/documentation/directions-api/API ) for trip travel information
 - [Pexel API](https://www.pexels.com/api/documentation/?#guidelines) for relevant photos of trip destination
 
-## Technologies & Architecture
-
-- Framework: Ruby on Rails
-- Testing: RSpec
-- JSON Serializer: FastJsonAPI
-- 3rd Party APIs:
-  - OpenWeather API
-  - MapQuest Geolocation API
-  - MapQuest Direction API
-  - Pexel API
-- Response Caching: VCR & Webmock
-- Test Coverage: SimpleCov
-
 ## Setup
 1. Fork & clone the repo
 2. Run `bundle install`
 3. Run `rails db:{create,migrate}`
 4. Run `bundle exec figaro install`
 5. Add your API keys to the newly created `config/application.yml` file.
+  - `WEATHER_API_KEY: <your_key>` get your api key [here](https://openweathermap.org/api)
+  - `MAPPING_API_KEY: <your_key>` get your api key [here](https://developer.mapquest.com/)
+  - `IMAGE_API_KEY: <your_key>` get your api key [here](https://www.pexels.com/api/)
 6. To run local test suite: `bundle exec rspec`
+7. Run local server `rails s`
 
 ## Endpoints
 
 All endpoints are built on this URL: ```https://sweater-weather-ad.herokuapp.com/```
 <br>
 ### Forecast
-GET /forecast - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/forecast?location=denver) <a name="forecast"></a>
+*GET /forecast* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/forecast?location=denver) <a name="forecast"></a>
 
 Retrieve detailed weather information for a given city, including:
 - Current weather conditions
@@ -59,13 +50,11 @@ Retrieve detailed weather information for a given city, including:
 - Daily forecasts for next 5 days
 
 Parameters:
-
-| Name  |  Requirement | Type  |
 |---|---|---|
 | `location`  | required  | String  |
 | `units`  | optional  | String  |
 
-**Units default to imperial but can be changed to metric; resulting in Celcius and meters/second measurment changes.**
+**Units default to imperial but can be changed to metric; resulting in Celcius and meters/second measurement changes.**
 
 Sample Request: ```https://sweater-weather-ad.herokuapp.com/api/v1/forecast?location=Denver```
 <details>
@@ -219,9 +208,36 @@ Sample Request: ```https://sweater-weather-ad.herokuapp.com/api/v1/forecast?loca
 <br>
 
 ### Backgrounds
+*GET /backgrounds* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?location=miami) <a name="backgrounds"></a>
+Retrieve a background image URL from Pexel for a given city.
 
-Retrieve a background image URL from Pexel for a given city, which can be resized to fit one's needs.
+Parameters:
+|---|---|---|
+| `location`  | required  | String  |
 
+Sample Request: `https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?location=miami`
+<details>
+<summary>Sample Response</summary>
+```json
+{
+  "data": {
+      "id": null,
+      "type": "image",
+      "attributes": {
+          "image": {
+              "location": "miami",
+              "image_url": "https://www.pexels.com/photo/high-rise-buildings-during-nighttime-421655/",
+              "credit": {
+                  "source": "pexels.com",
+                  "photographer": "Elvis Vasquez",
+                  "photographer_url": "https://www.pexels.com/@elvis-vasquez-136708"
+              }
+          }
+      }
+  }
+}
+```
+</details>
 ----
 <br>
 ### Users
@@ -239,3 +255,16 @@ Submit an existing user's email and password and receive their unique API key ge
 ### Road Trip
 
 Submit an origin and a destination along with a user's API key and receive information on travel time and the temperature and weather upon arrival.
+
+## Technologies
+
+- Framework: Ruby on Rails
+- Testing: RSpec
+- JSON Serializer: FastJsonAPI
+- 3rd Party APIs:
+  - OpenWeather API
+  - MapQuest Geolocation API
+  - MapQuest Direction API
+  - Pexel API
+- Response Caching: VCR & Webmock
+- Test Coverage: SimpleCov
