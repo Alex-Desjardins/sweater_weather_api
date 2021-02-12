@@ -12,7 +12,7 @@ deploy:
     secure: jVz9Lv2/vdivOYW551xukqhMru8sDixHtE35oCPirEw3OFDf8usYYVwK66isS0JNB/EvQ9j913sAPRstwR0j9I6HHsXY6O2+rSoBmOYb65MG1ALIAwKfsNP1dvHr+liZQLSsEpxjFvqaRoXcjMQHnvtPwR5SmXnecl+gdjyDTaRzpAb/pPF3KOJFxKsE5If6Gm4kHQEcDbu2it6ZrJ/milGieNgKuhWPMkOCd/pQyayybP4fA+cmIN6uF+G6YgSh1HumBicSIfEb8+Gk4sb0qSS5y0q+wnWCXqUCo/tE51fgva4JWw5yp9b5lZnNj6XePqau7CsqS3JN52ctywIMcf/R0KOHcJPwF5ozW85BDxomltlLyYcKckydW5A4JdKdWd/l08wQzpiBof2QqNvGoG24wpfEaktfQMjOM1VohSR9jKymOa17QG3QE6M+rq93+tYj5tRWSlc1v4AIqNhsyN2PTPTYuh3t609lOUGmqeWCE7vFzrZM+ox852gGPc0bzTqdfxPqDkpYcK5NQH5zIIOg4J+1heQ/CZiGUtsY98OTvEM2jsgyOe7ZQRK5Y6oEYwi9H3sm+yZuYbs+ShVNUj5CJK5Sg4BOzuPXeBrSu3pxDepsHkturcu1xeHr13vNc1ryhZU78UKZnhNzoJ1gsJ1QEBw/ThIu4OJkvPcYkQQ=
   app: sweater-weather-ad
   on:
-    repo: moosehandlr/sweater_weather_api
+    repo: Alex-Desjardins/sweater_weather_api
     branch: master
   skip_cleanup: 'true'
   run: rails db:migrate
