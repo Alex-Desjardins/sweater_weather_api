@@ -50,9 +50,9 @@ Retrieve detailed weather information for a given city, including:
 - Daily forecasts for next 5 days
 
 Parameters:
-|---|---|---|
 | `location`  | required  | String  |
 | `units`  | optional  | String  |
+|---|---|---|
 
 **Units default to imperial but can be changed to metric; resulting in Celcius and meters/second measurement changes.**
 
@@ -209,11 +209,12 @@ Sample Request: ```https://sweater-weather-ad.herokuapp.com/api/v1/forecast?loca
 
 ### Backgrounds
 *GET /backgrounds* - [Try it out](https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?location=miami) <a name="backgrounds"></a>
+
 Retrieve a background image URL from Pexel for a given city.
 
 Parameters:
-|---|---|---|
 | `location`  | required  | String  |
+|---|---|---|
 
 Sample Request: `https://sweater-weather-ad.herokuapp.com/api/v1/backgrounds?location=miami`
 <details>
